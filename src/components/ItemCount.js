@@ -13,10 +13,7 @@ export default function ItemCount() {
     }
         return (
 
-        // <div>
-        //    <h1>{count}</h1>
-        //     <button onClick={aumentarContador}>+ Aumentar</button>
-        //     <button onClick={disminuirContador}>- Disminuir</button>
+      
         <ButtonGroup className="border border-4 border-blue">
         <Button className="mr-4" onClick={disminuirContador}>- </Button>
         <h3> {count} </h3>
