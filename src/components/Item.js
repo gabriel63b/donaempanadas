@@ -8,12 +8,12 @@ export default function CardItem(props) {
   
     return (
       <div> 
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={image} />
+        <Card style={{ width: "18rem"}}>
+          <Card.Img variant="top" src={props.prod.image} />
           <Card.Body>
-            <Card.Title>{props.prod.name}</Card.Title>
-            <Card.Text>{props.prod.description}</Card.Text>
-            <Card.Text>${props.prod.precio}</Card.Text>
+            <Card.Title>{props.prod.title}</Card.Title>
+            {/* <Card.Text>{props.prod.description}</Card.Text> */}
+            <Card.Text>${props.prod.price}</Card.Text>
             <ItemCount/>
           </Card.Body>
         </Card>
