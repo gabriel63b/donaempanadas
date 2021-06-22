@@ -1,0 +1,24 @@
+
+.Item {
+    display: flex;
+    justify-content: space-around;
+    height: 60vh;
+    max-width: 60vh;
+    padding: 1rem 1rem 0 2rem;
+    margin-left: 5px;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    
+    border: 1px solid black;
+  }
+
+.ImageItem {
+    
+    height: 50%;
+    width: 50%;
+}
+
+.TextCard {
+    font-size: 14px;
+}

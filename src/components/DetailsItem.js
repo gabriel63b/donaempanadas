@@ -1,5 +1,6 @@
 import React,  {useEffect, useState} from 'react'
 import { useParams } from 'react-router'
+import Item from "./Item";
 import Detail from "./Detail";
 
 
@@ -13,11 +14,12 @@ function DetailsItem() {
         .then((res)=>res.json())
         .then((res)=>{setDetail(res[product_id-1])})
     },[])
-
+const details = "pasaremos detalles particulares del producto"
     return (
         
         <div>
-            <Detail pro = { detail }/>
+            <Item prod = { detail }/>
+            <Detail prod ={ details}/>
         </div>
     )
 }
