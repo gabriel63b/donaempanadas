@@ -4,7 +4,7 @@ import React from 'react'
 function CartWidget(props) {
     return (
         <div>
-            <a class="nav-link " href="#"><img src={props.img} alt="" width="50" height="50"></img></a>
+            <img src={props.img} alt="" width="50" height="50"></img>
         </div>
     )
 }

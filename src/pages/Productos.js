@@ -1,9 +1,11 @@
 import React from 'react'
+import DetailsItem from '../components/DetailsItem';
 
 function Productos() {
     return (
         <div>
-            <h1>GAbriel!! prod!</h1>
+            <h1>Aquí, productos</h1>
+            <DetailsItem/>
         </div>
     )
 }

@@ -2,17 +2,32 @@ import React from 'react'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import Productos from '../pages/Productos'
+import Login from '../pages/Login'
+import Cart from '../pages/Cart'
 import NavBar from '../components/NavBar';
+import FetchApi from '../components/FetchApi';
+import UserName from '../components/UserName';
+import DetailsItem from '../components/DetailsItem';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 function AppRouters() {
     return (
         <Router>
+            <div className="h-container">     
             <NavBar/>
+            {/* <Home/> */}
+            </div>
+            
             <Switch>
-            <Route exact path="/" component={Home}>Home</Route>
-            <Route path="/About" component={About}>About</Route>
-            <Route path="/Productos" component={Productos}>Productos</Route>
+                
+                <Route exact path="/Home" component={Home}></Route>
+                {/* <Route path="/About" component={About}></Route>
+                <Route path="/Productos" component={Productos}></Route> */}
+                <Route exact path="/Login" component={Login}></Route>
+                <Route exact path="/Cart" component={Cart}></Route>
+                {/* <Route path="/:userName" component={UserName}></Route> */}
+                <Route path="/:product_id" ><DetailsItem/></Route>
+                <FetchApi/>
             </Switch>
         </Router>
     )

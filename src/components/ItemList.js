@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import Item from "./Item";
 
 const productos = [
-  { id: "01", name: "Carne cortada a cuchillo", description: "Rellenas de carne cortada a cuchillo, especias, cebolla y huevo.", precio: 70},
-  { id: "02", name: "Humita", description: "Rellenas de queso, salsa blanca y choclo.", precio: 70 },
-  { id: "03", name: "Calabresa", description: "Rellenas de cantimpalo y muzzarella", precio: 70 }
+  { id:0, name: "Carne cortada a cuchillo", description: "Rellenas de carne cortada a cuchillo, especias, cebolla y huevo.", precio: 70},
+  { id:1, name: "Humita", description: "Rellenas de queso, salsa blanca y choclo.", precio: 70 },
+  { id:2, name: "Calabresa", description: "Rellenas de cantimpalo y muzzarella", precio: 70 }
 ];
 
 export default function ItemList() {
