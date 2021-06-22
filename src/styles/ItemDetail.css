@@ -1,0 +1,46 @@
+.CardDetails {
+    max-width: 50vh;
+    max-height: 50vh;  
+}
+
+.ImageDetail {
+    max-width: 50%;
+      
+}
+
+/** Globales **/
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+h1, h2, h3, h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+h3 {
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+img {
+    max-width: 100%;
+}
+/** Utilidades **/
+.centrar-texto {
+    text-align: center;
+}
+.no-margin {
+    margin: 0;
+}
+
+
+
+
