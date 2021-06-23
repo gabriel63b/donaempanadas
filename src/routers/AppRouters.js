@@ -6,7 +6,6 @@ import Login from '../pages/Login'
 import Cart from '../pages/Cart'
 import NavBar from '../components/NavBar';
 import FetchApi from '../components/FetchApi';
-import UserName from '../components/UserName';
 import DetailsItem from '../components/DetailsItem';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
@@ -25,8 +24,7 @@ function AppRouters() {
                 <Route path="/Productos" component={Productos}></Route> */}
                 <Route exact path="/Login" component={Login}></Route>
                 <Route exact path="/Cart" component={Cart}></Route>
-                {/* <Route path="/:userName" component={UserName}></Route> */}
-                <Route path="/:product_id" ><DetailsItem/></Route>
+                <Route exact path="/Productos/detail/:product_id" component={DetailsItem}></Route>
                 <FetchApi/>
             </Switch>
         </Router>

@@ -14,7 +14,7 @@ export default function Item(props) {
         <Card className= "Item">
           <Card.Img variant="top" className= "ImageItem" src={props.prod.image} />
           <Card.Body>
-          <Link to={`/${props.prod.id}`}><Card.Title className= "TextCard">{props.prod.title}</Card.Title></Link>
+          <Link to={`/Productos/detail/${props.prod.id}`}><Card.Title className= "TextCard">{props.prod.title}</Card.Title></Link>
             {/* <Card.Text>{props.prod.description}</Card.Text> */}
             <Card.Text>${props.prod.price}</Card.Text>
             <ItemCount/>

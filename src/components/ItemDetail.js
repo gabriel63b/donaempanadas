@@ -8,7 +8,6 @@ function ItemDetail(props) {
     console.log(props);
     return (
         <div>
-
             <div class="container-fluid">
                     <h2 class="centrar-texto text-uppercase fw-bold">DETALLE DEL PRODUCTO</h2>
                     <div class="row border border-dark">
@@ -26,22 +25,6 @@ function ItemDetail(props) {
                         </div>
                     </div>
             </div>
-
-            {/* <div class="d-flex justify-content-center CardDetails">
-            <Card className="text-center">
-                <Card.Header>DETALLE DEL PRODUCTO</Card.Header>
-            <div class="d-flex flex-row bd-highlight mb-3">
-                <Card.Img variant="top" class="p-2 bd-highlight" src={props.prod.image} />
-                <Card.Body class="p-2 bd-highlight">
-                    <Card.Title>{props.prod.title}</Card.Title>
-                    <Card.Text>{props.prod.title}</Card.Text>
-                    <Card.Text>${props.prod.price}</Card.Text>
-                    <ItemCount/>
-                    <Button className="" block variant="primary">Agregar</Button>
-                </Card.Body>
-            </div>
-            </Card>
-            </div> */}
         </div>
     )
 }
